@@ -1,6 +1,6 @@
 # MondayOnFake
 
-# Problem Description: Correlation of Timeframes and Swing Analysis Across Multiple Timeframes
+# Problem description: Correlation of timeframes and swing analysis across multiple timeframes
 
 The objective of this project is to explore possible mathematical correlations between various timeframes (from W1 to M5) to identify potential trend reversals or interdependencies. Specifically, the project will investigate whether the behavior of higher timeframes (e.g., D1) can be predicted or confirmed by lower timeframes (e.g., H4, H1).
 
