@@ -1,7 +1,8 @@
-import requests
-import time
 import datetime
 import json
+import time
+
+import requests
 
 API_KEY = ''
 API_SECRET = ''
@@ -57,7 +58,7 @@ def get_data_for_intervals_by_week(symbol, interval, week_ranges):
 
         # Save the weekly data to a file
         if data:
-            filename = f'btc_{interval}_{start_str}_to_{end_str}_data.json'
+            filename = f'./BitcoinData/btc_{interval}_{start_str}_to_{end_str}_data.json'
             with open(filename, 'w') as f:
                 json.dump(data, f)
             print(f"Data for M5 from {start_str} to {end_str} saved successfully.")
@@ -86,7 +87,7 @@ symbol = 'BTCUSDT'
 interval = '5m'  # M5 interval
 
 # Set the start and end dates for the data collection
-week_ranges = generate_week_ranges("2020-01-01", "2024-10-18")  # Specify your date range
+week_ranges = generate_week_ranges("2015-12-31", "2024-10-18")  # Specify your date range
 
 # Fetching the data
 get_data_for_intervals_by_week(symbol, interval, week_ranges)
